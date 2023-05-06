@@ -1,0 +1,363 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+*{
+    font-family: 'Kumbh Sans', sans-serif;
+    margin: 0;
+}
+
+#menu, #close, #previous, #next, .setas{
+    display: none;
+}
+
+.navbar{
+    display: flex;
+    height: 150px;
+}
+
+.navbar #logo{
+    margin-left: 12%;
+    margin-top: 50px;
+    width: 11%;
+    height: 20%;
+}
+
+.navbar #cart{
+    width: 3%;
+    height: 30%;
+    margin-top: 45px;
+    margin-left: 23%;
+}
+
+.navbar #avatar{
+    width: 4%;
+    height: 40%;
+    margin-top: 36px;
+    margin-right: 20%;
+    margin-left: 5px;
+}
+
+.navbar h3{
+    margin-top: 53px;
+    margin-left: 35px;
+    font-weight: 400;
+    font-size: 1.2vw;
+    color: rgba(128, 128, 128, 0.863);
+    cursor: pointer;
+}
+
+hr{
+    border-top: 1px;
+    margin-top: -1%;
+}
+
+section{
+    display: flex;
+    margin-left: 240px;
+    margin-right: 150px;
+    height: 600px;
+    width: 70%;
+    padding-left: 5px;
+    margin-top: 100px;
+}
+
+.images{
+    width: 70%;
+}
+
+#photo{
+    border-radius: 8px;
+    width: 100%; 
+    height: 70%;
+}
+
+.groupImages{
+    display: flex;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.groupImages img{
+    width: 6.7vw;
+    height: 11vh;
+}
+
+.groupImages img:hover{
+    opacity: 50%;
+    border: 2px solid orangered;
+    cursor: pointer;
+}
+
+#thumb1{
+    margin-left: 5%;
+}
+
+.information{
+    margin-left: 15%;
+    width: 50%;
+}
+
+.information h5{
+    color: rgb(170, 130, 0);
+    font-weight: 700;
+    font-size: 1.5vw;
+}
+
+.information h1{
+    font-size: 2.7vw;
+    margin-top: 20px;
+}
+
+.information h4{
+    color: rgba(128, 128, 128, 0.61);
+    font-size: 1.2vw;
+    margin-top: 20px;
+}
+
+.priceWithDiscount{
+    display: block;
+}
+
+.prices{
+    display: flex;
+}
+
+.prices h3{
+    font-size: 1.5vw;
+    margin-top: 20px;
+}
+
+.prices h6{
+    background-color: rgba(255, 192, 203, 0.637);
+    color: rgb(206, 141, 0);
+    margin-left: 5%;
+    width: 10%;
+    height: 15%;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.3vw;
+}
+
+.sublinhado{
+    margin-top: 2%;
+    color: rgba(128, 128, 128, 0.801);
+    font-size: 1vw;
+}
+
+.buttons{
+    display: flex;
+    align-items: center;
+    margin-top: 5%;
+}
+
+
+#bt{
+    background-color: rgba(238, 238, 238, 0.815);
+    width: 3.7vw;
+    height: 6.5vh;
+    border: none;
+    cursor: pointer;
+}
+
+.bts{
+    color: orange;
+}
+
+.bt{
+    font-weight: bold;
+}
+
+.btns{
+    margin: 15px;
+    display: flex;
+}
+
+.buttonAddToCart button{
+    width: 15vw;
+    height: 6.3vh;
+    border: none;
+    border-radius: 5px;
+    background-color: orange;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+}
+
+.buttonAddToCart img{
+    filter: brightness(5);
+    width: 1.3vw;
+    height: 1.9vh;
+}
+
+@media screen and (max-width: 425px) {
+    #menu, #previous, #next, .setas{
+        display: flex;
+    }
+
+    .navbar{
+        width: 100%;
+        height: 180px;
+    }
+
+    #menu{
+        width: 100vw;
+        height: 7vh;
+        margin-left: 10%;
+        margin-top: 80px;
+        cursor: pointer;
+    }
+
+    .navbar #logo{
+        width: 70vw;
+        height: 8vh;
+        margin-top: 70px;
+        margin-left: 50px;
+    }
+
+    .navbar h3{
+        display: none;
+    }
+
+    .navbar #cart{
+        width: 40%;
+        height: 40%;
+        margin-left: 63%;
+        margin-top: 80px;
+    }
+
+    .navbar #avatar{
+        width: 40%;
+        height: 50%;
+        margin-left: 3%;
+        margin-top: 70px;
+    }
+
+    section{
+        display: block;
+        margin-left: 0px;
+        width: min-content;
+    }
+
+    .images{
+        width: 100%;
+    }
+
+    #photo{
+        width: 100%;
+        margin-left: 1.3%;
+        height: 750px;
+    }
+
+    .setas{
+        margin-left: 30px;
+    }
+
+    #previous, #next{
+        width: 50px;
+        height: 50px;
+        padding: 25px;
+        background-color: white;
+        position: absolute;
+        border-radius: 50px;
+        margin-top: 300px;
+    }
+
+    #next{
+        margin-left: 740px;
+    }
+    
+    .groupImages{
+        display: none;
+    }
+    
+    .information{
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    .information h5{
+        font-size: 2.5rem;
+        margin: 40px;
+    }
+
+    .information h1{
+        margin-left: 40px;
+        font-size: 4.5rem;
+    }
+
+    .information h4{
+        margin-left: 40px;
+        margin-top: 25px;
+        font-size: 2.8rem;
+        width: 90%;
+    }
+
+    .prices{
+        margin-top: 45px;
+    }
+
+    .prices h3{
+        font-size: 5rem;
+        margin-left: 40px;
+    }
+
+    .prices h6{
+        font-size: 3rem;
+        width: 15%;
+        height: 15%;
+        margin-top: 40px;
+        margin-left: 40px;
+    }
+
+    .sublinhado{
+        margin-left: 75%;
+        font-size: 3rem;
+        margin-top: -76px;
+    }
+
+    .buttons{
+        margin-top: 50px;
+        width: 100%;
+        display: block;
+        margin-left: 0px;
+    }
+
+    #bt{
+        width: 270px;
+        height: 130px;
+        font-size: 3rem;
+    }
+    
+    #bt:nth-child(1){
+        margin-left: 40px;
+    }
+
+    .buttonAddToCart{
+        background-color: white;
+    }
+
+    .buttonAddToCart button{
+        width: 815px;
+        font-size: 3rem;
+        height: 150px;
+        border: none;
+        background-color: rgb(255, 160, 51);
+        margin-top: 30px;
+        color: white;
+        font-weight: bold;
+        border-radius: 15px;
+        margin-left: 40px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .navbar #cart{
+        margin-left: 83%;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .navbar #cart{
+        margin-left: 100%;
+    }
+}
+
